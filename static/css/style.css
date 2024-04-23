@@ -51,7 +51,7 @@ body {
 }
 
 .card {
-    border: none;
+    border: 2px #149E37 solid;
     background-color: transparent;
 }
 
@@ -181,4 +181,9 @@ body {
 
 .approval {
     color: rgb(222, 146, 168);
+}
+
+.social-tag {
+    color: #149E37;
+    font-size: 200%;
 }

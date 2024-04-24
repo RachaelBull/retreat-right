@@ -35,6 +35,13 @@ body {
     padding: 0;
 }
 
+#username {
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 1px;
+    color: #669900;
+}
+
 .thin {
     font-weight: 300;
 }
@@ -54,7 +61,7 @@ body {
 .card {
     border: 1px solid white;
     background-color: whitesmoke;
-    box-shadow: 10px 5px 5px #A5CBAF;
+    box-shadow: 10px 5px 5px white;
 }
 
 .image-container {

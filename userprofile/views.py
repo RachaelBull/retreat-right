@@ -1,6 +1,15 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .models import userspage
 
-# Create your views here.
+
 def users_page(request):
-    return HttpResponse("Hello test")
+    """
+    Renders the Profile page
+    """
+    userprofile = userspage.objects.all()
+
+    return render(
+        request,
+        "userprofile/userprofile.html",
+        {"userprofile": userprofile},
+    )

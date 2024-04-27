@@ -16,6 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.conf import settings
+from django.conf.urls.static import static
 from userprofile.views import users_page
 
 urlpatterns = [
@@ -23,6 +25,9 @@ urlpatterns = [
     path("accounts/", include("allauth.urls")),
     path('admin/', admin.site.urls),
     path('summernote/', include('django_summernote.urls')),
-    path('userprofile/', users_page, name='userprofile'),
+    path('userprofile/', include('userprofile.urls'), name='userprofile'),
     path("", include("blog.urls"), name="blog-urls"),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import userspage
+from .models import UsersPage
 from django_summernote.admin import SummernoteModelAdmin
 
 
-admin.site.register(userspage)
+admin.site.register(UsersPage)

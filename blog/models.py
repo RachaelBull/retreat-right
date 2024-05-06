@@ -10,6 +10,7 @@ class Post(models.Model):
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="blog_posts"
     )
+    ticket_price = models.TextField()
     content = models.TextField() # R blog content
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)

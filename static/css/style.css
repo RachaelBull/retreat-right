@@ -2,8 +2,8 @@ body {
     background-color: #4d4d4d;
 }
 
-.greyed {
-    background-color: #d9d9d9;
+.transparent {
+    background-color: transparent;
 }
 
 .logo-first {
@@ -19,6 +19,10 @@ body {
     font-family: Lobster Two, sans-serif;
     letter-spacing: 3px;
     font-size: 2.2rem;
+}
+
+.transparent {
+    background-color: transparent;
 }
 
 .hero-image-container {

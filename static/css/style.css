@@ -57,6 +57,22 @@ body {
     margin: auto;
 }
 
+.para-header-first {
+    font-family: Lobster Two, sans-serif;
+    font-size: larger;
+    letter-spacing: 2px;
+}
+
+.para-header-second {
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: larger;
+    margin-top: 8%;
+    border-bottom: dotted;
+    border-width: 5px 3px;
+    border-radius: 10px 40px;
+}
+
 #username {
     font-weight: bold;
     font-size: large;

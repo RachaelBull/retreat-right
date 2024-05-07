@@ -39,6 +39,24 @@ body {
     padding: 0;
 }
 
+.hero-text-container {
+    width: 25%;
+    height: 25%;
+    margin-left: 35%;
+    position: relative;
+    top: 150px;
+    background-color: transparent;
+}
+
+#welcome-header {
+    background-color: rgb(0, 255, 153, .4);
+    letter-spacing: 2px;
+    border-radius: 5px 20px 5px;
+    width: 90%;
+    height: 37%;
+    margin: auto;
+}
+
 #username {
     font-weight: bold;
     font-size: large;

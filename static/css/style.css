@@ -67,7 +67,7 @@ body {
     float: left;
     margin-left: 50px;
     font-size: medium;
-    border: 1px solid grey;
+    border: 1px solid black;
     background-color: rgb(64, 64, 64, .6);
     color: white;
     font-family: DM Sans, sans-serif;
@@ -94,12 +94,19 @@ body {
     margin-right: 50px;
     position: absolute;
     right: 10px;
-    top: 100px;
+    top: 50px;
 }
 
 #sign-hero-button {
     width: 120px;
     height: 60px;
+    border-radius: 30px;
+    border: 3px solid rgb(0, 255, 153, .4);
+    font-family: DM Sans, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(166, 166, 166, .4);
 }
 
 .para-header-second {

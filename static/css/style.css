@@ -63,6 +63,45 @@ body {
     letter-spacing: 2px;
 }
 
+.sign-cover {
+    float: left;
+    margin-left: 50px;
+    font-size: medium;
+    border: 1px solid grey;
+    background-color: rgb(64, 64, 64, .6);
+    color: white;
+    font-family: DM Sans, sans-serif;
+    width: 20%;
+    position: relative;
+}
+
+.sign-cover-text {
+    margin: 20px;
+}
+
+.pill {
+    width: 200px;
+    height: 35px;
+    background-color: rgb(0, 255, 153, .4);
+    border-radius: 40px 999em 999em 40px;
+    padding-top: 5px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+#sign-hero-button-container {
+    padding-right: 50px;
+    margin-right: 50px;
+    position: absolute;
+    right: 10px;
+    top: 100px;
+}
+
+#sign-hero-button {
+    width: 120px;
+    height: 60px;
+}
+
 .para-header-second {
     font-weight: bold;
     letter-spacing: 3px;

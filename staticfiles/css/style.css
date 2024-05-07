@@ -2,8 +2,8 @@ body {
     background-color: #4d4d4d;
 }
 
-.greyed {
-    background-color: #d9d9d9;
+.transparent {
+    background-color: transparent;
 }
 
 .logo-first {
@@ -21,11 +21,16 @@ body {
     font-size: 2.2rem;
 }
 
+.transparent {
+    background-color: transparent;
+}
+
 .hero-image-container {
     width: 100%;
 }
 
 #hero {
+    background-image: url('../images/carribean.jpg');
     width: 100%;
     height: 70vh;
     background: center;
@@ -34,6 +39,106 @@ body {
     padding: 0;
 }
 
+.hero-text-container {
+    width: 25%;
+    height: 25%;
+    margin-left: 35%;
+    position: relative;
+    top: 150px;
+    background-color: transparent;
+}
+
+#welcome-header {
+    background-color: rgb(0, 255, 153, .4);
+    letter-spacing: 2px;
+    border-radius: 5px 20px 5px;
+    width: 90%;
+    height: 37%;
+    margin: auto;
+}
+
+.para-header-first {
+    font-family: Lobster Two, sans-serif;
+    font-size: larger;
+    letter-spacing: 2px;
+}
+
+.sign-cover {
+    float: left;
+    margin-left: 50px;
+    font-size: medium;
+    border: none;
+    background-color: rgb(64, 64, 64, .6);
+    color: white;
+    font-family: DM Sans, sans-serif;
+    width: 20%;
+    position: relative;
+}
+
+.sign-cover-text {
+    margin: 20px;
+}
+
+.sign-cover-text-two {
+    position: absolute;
+    right: 80px;
+    top: 115px; 
+}
+
+.pill {
+    width: 200px;
+    height: 35px;
+    background-color: rgb(0, 255, 153, .4);
+    border-radius: 40px 999em 999em 40px;
+    padding-top: 5px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+#sign-hero-button-container {
+    padding-right: 50px;
+    margin-right: 50px;
+    position: absolute;
+    right: 10px;
+    top: 50px;
+}
+
+.sign-hero-button {
+    width: 120px;
+    height: 60px;
+    border-radius: 30px;
+    border: 3px solid rgb(0, 255, 153, .4);
+    font-family: DM Sans, sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(166, 166, 166, .4);
+}
+
+#register-hero-button-container {
+    padding-right: 50px;
+    margin-right: 50px;
+    position: absolute;
+    right: 10px;
+    top: 140px;
+}
+
+.para-header-second {
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-size: larger;
+    margin-top: 8%;
+    border-bottom: dotted;
+    border-width: 5px 3px;
+    border-radius: 10px 40px;
+}
+
+#username {
+    font-weight: bold;
+    font-size: large;
+    letter-spacing: 1px;
+    color: #669900;
+}
 
 .thin {
     font-weight: 300;
@@ -52,22 +157,24 @@ body {
 }
 
 .card {
-    border: none;
-    background-color: transparent;
+    border: 1px solid white;
+    background-color: whitesmoke;
+    box-shadow: 10px 5px 5px white;
 }
 
 .image-container {
     position: relative;
+    margin-top: 3px;
 }
 
 .image-flash {
     position: absolute;
     bottom: 5%;
     min-width: 30%;
-    border: 2px solid white;
-    border-radius: 25px;
-    left: -2px;
-    background-color: #A8D4B3;
+    border: 1px solid #A5CBAF;
+    border-radius: 10px;
+    left: -4px;
+    background-color: white;
 }
 
 .scale {
@@ -76,9 +183,9 @@ body {
 }
 
 .author {
-    color: white;
+    color: #519864;
     margin: 4px;
-    text-transform: uppercase;
+    font-family: DM Sans, sans-serif;
 }
 
 .masthead {
@@ -182,4 +289,9 @@ body {
 
 .approval {
     color: rgb(222, 146, 168);
+}
+
+.social-tag {
+    color: #149E37;
+    font-size: 200%;
 }

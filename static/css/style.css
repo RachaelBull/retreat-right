@@ -67,7 +67,7 @@ body {
     float: left;
     margin-left: 50px;
     font-size: medium;
-    border: 1px solid black;
+    border: none;
     background-color: rgb(64, 64, 64, .6);
     color: white;
     font-family: DM Sans, sans-serif;
@@ -77,6 +77,12 @@ body {
 
 .sign-cover-text {
     margin: 20px;
+}
+
+.sign-cover-text-two {
+    position: absolute;
+    right: 80px;
+    top: 115px; 
 }
 
 .pill {
@@ -97,7 +103,7 @@ body {
     top: 50px;
 }
 
-#sign-hero-button {
+.sign-hero-button {
     width: 120px;
     height: 60px;
     border-radius: 30px;
@@ -107,6 +113,14 @@ body {
     font-weight: bold;
     color: white;
     background-color: rgb(166, 166, 166, .4);
+}
+
+#register-hero-button-container {
+    padding-right: 50px;
+    margin-right: 50px;
+    position: absolute;
+    right: 10px;
+    top: 140px;
 }
 
 .para-header-second {

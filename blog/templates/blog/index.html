@@ -16,11 +16,16 @@
         <p class="pill"><i class="far fa-comment"></i> Comment on posts</p>
         <p class="pill"><i class="far fa-user"></i> View your profile</p>
         <div id="sign-hero-button-container">
-            <a href="{% url 'account_login' %}"><button type="button" id="sign-hero-button">
+            <a href="{% url 'account_login' %}"><button type="button" class="sign-hero-button">
                 Sign In
             </button></a>
         </div>
-        <h5>Don't have an account?</h5>
+        <h6 class="sign-cover-text-two">Don't have an account?</h6>
+        <div id="register-hero-button-container">
+            <a href="{% url 'account_signup' %}"><button type="button" class="sign-hero-button">
+                Sign Up
+            </button></a>
+        </div>
     </div>
     </section>
   </div>

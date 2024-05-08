@@ -63,3 +63,45 @@ How I will draw in my audience:
 - I will aim to try and captivate my audience by producing well written, well formatted, relevent and intruiging posts to create a feel as though the user was there with me.
 - I will regularly update my posts to keep users entertained and to keep fresh content flowing through the website.
 
+## Scope
+
+This website will consist of the following features:
+
+- A clear and attractive landing page
+- Readable nav header links
+- Further link promps over the landing page
+- An option to register for an account
+- An option to signi in to an account
+- Allow the user to create and update their own personal profile
+- Allow the user to comment on posts
+- Allow the user to edit their comments
+- Allow users to delete their comments
+- Allow users to open and read posts
+- Allow users to open and read the about page
+
+
+## Wireframes and Design
+
+WIREFRAMES WILL GO HERE
+
+## Data Model Plans
+
+DATA MODEL PLANS WILL GO HERE
+
+# Data Models
+
+Here I will explain in more depth what each model will do and is expected to do.
+
+**User Model**
+
+- The user model is an automatically generated default model from Django Authentication
+- This model comes with user login authentication prompting the user to log in to their account or to sign up for an account
+- The user model has a one to many relationship with the user post model. This is because the user can have many posts (in this websites case that would be me) but the post has only one author, the posts are authenticated to see if the user is logged in and has an account
+- The user model will link anything such as comments, profiles, post etc to one user, so that only the content the user has inputted and provided may be shown/ avaible to edit to that user depending on the circumstance.
+
+**Post Model**
+
+- The post model is a one to many relationship with the user model and the post model as the user is able to have many post but each post has only one author
+- The author field in this model is used as a Foreign Key that will be the main link to a user for authentication
+- This model will give the creator (me in the website's case) fields to fill in from the admin panel in order to create a post. This consists of; A title field, a slug field, a content field, a ticket price field, a status field, an excerpt field, a created on field and an updated on field.
+

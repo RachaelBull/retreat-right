@@ -105,3 +105,21 @@ Here I will explain in more depth what each model will do and is expected to do.
 - The author field in this model is used as a Foreign Key that will be the main link to a user for authentication
 - This model will give the creator (me in the website's case) fields to fill in from the admin panel in order to create a post. This consists of; A title field, a slug field, a content field, a ticket price field, a status field, an excerpt field, a created on field and an updated on field.
 
+**Comment Model**
+
+- The comment model has a many to many relationship regarding the post model but a many to one relationship in regards to the user model
+- This model will use the post and author as the foreign keys for verification of a user to link the user to any comments they have made throughout the website
+- The user has full ability to fill out the content of the body field provided to leave comments
+- A time and a date will be automatically generated whenever the user leaves a comment to signify when the comment was left
+- This model contains an approved field which essentially will send the users comment off to the admin panel for approval before it is left in the thread onto the post
+
+**About Model**
+
+- The about model acts as an additional information page about the user and the website itself
+- The about model has fields that only the superuser can fill in and edit from the admin panel to keep the contents of this page to a high standard and free from outside customisation
+
+**Profile Model**
+
+- The profile has a one to one relationship with the use model as the user can only have one profile and that specific profile can only belong to one user
+- The profile model consists of a name field, an email field, and a bio field which the user is able to create and update freely
+- The contents updated by the user will stay filled in in the form in order for the user to come back to and read/update

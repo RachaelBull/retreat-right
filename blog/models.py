@@ -3,6 +3,12 @@ from django.contrib.auth.models import User # R Imports build in user model
 
 STATUS = ((0, "Draft"), (1, "Published")) # R draft = 0 published = 1
 
+
+LIKE_OPTIONS = (
+    ('Like', 'Like'),
+    ('Unlike', 'Unlike')
+)
+
 # Create your models here.
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
@@ -15,7 +21,8 @@ class Post(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     status = models.IntegerField(choices=STATUS, default=0)
     excerpt = models.TextField(blank=True)
-    updated_on = models.DateTimeField(auto_now=True)
+    likes = models.ManyToManyField(
+        User, related_name='blogpost_like', blank=True)
 
     class Meta:
         ordering = ["-created_on"]
@@ -25,6 +32,9 @@ class Post(models.Model):
         Method to turn the titles into string format
         """
         return f"{self.title} | Posted By: {self.author}"
+
+    def likes_count(self):
+        return self.likes.count()
 
 class Comment(models.Model):
 
@@ -44,3 +54,12 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"{self.author} commented {self.body}"
+
+class Like(models.Model):
+
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    post = models.ForeignKey(Post, on_delete=models.CASCADE)
+    value = models.CharField(choices=LIKE_OPTIONS, default='Like', max_length=10)
+
+    def __str__(self):
+        return str(self.post)

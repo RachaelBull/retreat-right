@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User # R Imports build in user model
+from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published")) # R draft = 0 published = 1
 
@@ -16,6 +17,7 @@ class Post(models.Model):
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="blog_posts"
     )
+    content_image = CloudinaryField('image', default='placeholder')
     ticket_price = models.TextField()
     content = models.TextField() # R blog content
     created_on = models.DateTimeField(auto_now_add=True)

@@ -55,6 +55,13 @@
                             <p class="card-text text-muted h6">{{ post.created_on}}
                             </p>
                         </div>
+                        <div class="col-auto d-none d-lg-block">
+                            {% if "placeholder" in post.content_image.url %}
+                            <img style="object-fit: cover;" width="200" height="250" src="{% static 'images/turtle.jpg' %}" alt="placeholder image">
+                            {% else %}
+                            <img style="object-fit: cover;" width="200" height="250" src=" {{ post.content_image.url }}" alt="{{ post.title }}">
+                            {% endif %}
+                        </div>
                     </div>
                 </div>
                 {% if forloop.counter|divisibleby:3 %}

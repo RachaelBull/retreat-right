@@ -398,7 +398,6 @@ div, ul {
 
 .about-form {
     border: 2px solid rgb(0, 255, 153, .4);
-    /*width: 40vw;*/
     height: 700px;
     padding-bottom: 20px;
     border-radius: 25px;
@@ -432,4 +431,23 @@ div, ul {
 .center-align {
     display: block;
     margin: auto;
+}
+
+/* Profile page */
+
+.profile-container {
+    border: 2px solid rgb(0, 255, 153, .4);
+    height: 600px;
+    padding: 30px 30px;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    background-color: rgb(255, 255, 255, .6);
+    font-family: DM Sans, sans-serif;
+    width: 90%;
+    margin-left : 6%;
+
+}
+
+.profile-bigger {
+    padding-bottom: 30px;
 }

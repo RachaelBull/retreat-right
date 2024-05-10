@@ -3,33 +3,28 @@
 {% load crispy_forms_tags %}
 {% block content %}
 
-<div class="container mt-5">
+<div class="container">
   <div class="row">
-    <div class="col-8">
-      <!-- Title goes between these h2 tags -->
-      <h2 class="text-center">Your Profile</h2>
-      <h4>
+    <div class="col-md-8 mt-3 offset-md-2">
+      <h1 class="sign-up-head text-center">Your Profile</h1>
+
+      <p class="text-center sign-up-p">
         Share a little more about yourself here. Whether it be why you signed up, your destination goals, or just a keen interest in other peoples travelling stories.
-        <br>
-        <br>
-          Who knows.. maybe we'll have something in common?
-      </h4>
-      <!-- Content goes directly underneath this -->
-      <div>
-        <form method="POST">
-
-          {% csrf_token %}
-
-          {{ user_profile_form | crispy }}
-
-          <div class="text-center">
-            <button type="submit">Submit</button>
-          </div>
-        </form>
-      </div>
+      </p>
     </div>
   </div>
-  <div class="row">
+  <div class="row profile-container">
+    <div class="col-md-8 mt-3 offset-md-2">
+      <form method="post">
+        {% csrf_token %}
+
+            {{ user_profile_form | crispy }}
+        <div>
+        <button class="btn btn-signup right sign-hero-button center-align" type="submit">
+          Submit</button>
+      </form>
+    </div>
   </div>
 </div>
-{% endblock content %}
+
+{% endblock %}

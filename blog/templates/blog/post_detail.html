@@ -18,7 +18,7 @@
               {% if "placeholder" in post.content_image.url %}
               <img class="scale" width="200" height="250" src="{% static 'images/turtle.jpg' %}" alt="placeholder image">
               {% else %}
-              <img class="scale" width="200" height="250" src=" {{ post.content_image.url }}" alt="{{ post.title }}">
+              <img class="scale" width="200" height="250" src=" {{ post.content_image.url }}" alt="{{ post.title }}" id="post-image">
               {% endif %}
             </div>
         </div>

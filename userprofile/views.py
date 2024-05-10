@@ -40,4 +40,4 @@ class UserProfile(View):
 
             return redirect('home')
 
-        return render(request, "userprofile/userprofile.html", {'user_profile_form: user_profile_form'})               
+        return render(request, "userprofile/userprofile.html", {'user_profile_form': user_profile_form})               

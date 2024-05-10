@@ -6,8 +6,12 @@ body {
     background-color: rgb(115, 115, 115);
 }
 
+div, ul {
+    marker: none;
+}
+
 .header-strip {
-    background-color: transparent;
+    background-color: whitesmoke;
 }
 
 .logo-container {
@@ -149,15 +153,31 @@ body {
 }
 
 .home-post-header {
+    padding-bottom: 15px;
     font-family: Lobster Two, sans-serif;
     letter-spacing: 2px;
+    font-weight: bold;
+    border-bottom: 1px solid grey;
 }
 
 .content-img {
     display: block;
     margin-left: auto;
-    border-top-left-radius: 40%;
-    border: solid 1px black;
+    border: solid 1px white;
+    width: 300px;
+    height: 300px;
+}
+
+.card-text-p {
+    position: absolute;
+    bottom: 0;
+}
+
+.post-text {
+    width: 50%;
+    height: 100%;
+    font-family: DM Sans, sans-serif;
+    padding-top: 10px;
 }
 
 #username {
@@ -180,13 +200,13 @@ body {
 }
 
 .main-bg {
-    background-color: #f2f2f2;
+    background-color: rgb(217, 217, 217);
 }
 
 .card {
     border: 1px solid white;
     background-color: whitesmoke;
-    box-shadow: 10px 5px 5px white;
+    box-shadow: 10px 5px 5px grey;
 }
 
 .image-container {
@@ -315,4 +335,31 @@ body {
 .social-tag {
     color: #149E37;
     font-size: 200%;
+    padding: 20px;
+}
+
+/** Sign Up Page **/
+
+.sign-up-head {
+    text-transform: uppercase;
+    font-family: DM Sans, sans-serif;
+    padding-top: 20px;
+    letter-spacing: 1px;
+}
+
+.sign-up-p {
+    padding-top: 60px;
+    font-size: larger;
+}
+
+.sign-up-container {
+    border: 2px solid rgb(0, 255, 153, .4);
+    height: 500px;
+    width: 700px;
+    margin: auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    background-color: rgb(255, 255, 255, .6);
 }

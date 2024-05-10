@@ -8,17 +8,17 @@
 <div class="container">
   <div class="row">
     <div class="col-md-8 mt-3 offset-md-2">
-      <h3>{% trans "Sign Up" %}</h3>
+      <h1 class="sign-up-head text-center">{% trans "Sign Up" %}</h1>
 
-      <p>{% blocktrans %}
+      <p class="text-center sign-up-p">{% blocktrans %}
         Already have an account?
         <a class="link" href="{{ login_url }}">sign in</a>
         here.
         {% endblocktrans %}</p>
     </div>
   </div>
-  <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
+  <div class="row sign-up-container">
+    <div class="col-md-8 mt-3 offset-md-2 text-center">
       <form class="signup" id="signup_form" method="post"
         action="{% url 'account_signup' %}">
         {% csrf_token %}
@@ -27,7 +27,7 @@
         <input type="hidden" name="{{ redirect_field_name }}"
           value="{{ redirect_field_value }}" />
         {% endif %}
-        <button class="btn btn-signup right" type="submit">
+        <button class="btn btn-signup right sign-hero-button" type="submit">
           {% trans "Sign Up" %} &raquo;</button>
       </form>
     </div>

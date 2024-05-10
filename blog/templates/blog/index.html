@@ -44,19 +44,18 @@
                             <div class="image-container">
                             </div>
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
-                                <h2 class="home-post-header">{{ post.title }}</h2>
-                                <p class="card-text">{{ post.excerpt }}</p>
+                                <h2 class="home-post-header text-center">{{ post.title }}</h2>
+                                <p class="card-text post-text">{{ post.excerpt }}</p>
                             </a>
 
-                            <hr />
-                            <p class="card-text text-muted h6">{{ post.created_on}}
+                            <p class="card-text text-muted h6 card-text-p">{{ post.created_on}}
                             </p>
                         </div>
-                        <div class="col-auto d-none d-lg-block">
+                        <div class="col-auto d-none d-lg-block card-text">
                             {% if "placeholder" in post.content_image.url %}
-                            <img class="content-img" style="object-fit: cover;" width="200" height="250" src="{% static 'images/turtle.jpg' %}" alt="placeholder image">
+                            <img class="content-img" src="{% static 'images/turtle.jpg' %}" alt="placeholder image">
                             {% else %}
-                            <img class="content-img" style="object-fit: cover;" width="200" height="250" src=" {{ post.content_image.url }}" alt="{{ post.title }}">
+                            <img class="content-img" src=" {{ post.content_image.url }}" alt="{{ post.title }}">
                             {% endif %}
                         </div>
                     </div>

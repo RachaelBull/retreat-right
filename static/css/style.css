@@ -15,7 +15,7 @@ div, ul {
 }
 
 .logo-container {
-    border: 2px solid rgb(0, 255, 153, .4);
+    border: 2px solid rgb(0, 255, 153, .8);
     background-color: whitesmoke;
     border-radius: 5px 20px 5px;
 }
@@ -362,4 +362,26 @@ div, ul {
     border-radius: 25px;
     letter-spacing: 1px;
     background-color: rgb(255, 255, 255, .6);
+}
+
+.sign-in-container {
+        border: 2px solid rgb(0, 255, 153, .4);
+        height: 400px;
+        width: 600px;
+        margin: auto;
+        padding-top: 80px;
+        padding-bottom: 20px;
+        border-radius: 25px;
+        letter-spacing: 1px;
+        font-size: larger;
+        background-color: rgb(255, 255, 255, .6);
+}
+
+/** Messages **/
+
+.cust-message {
+    background-color: rgb(0, 255, 153, .4);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
 }

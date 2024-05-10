@@ -10,23 +10,23 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 mt-3 offset-md-2">
-            <h2>{% trans "Sign In" %}</h2>
+            <h1 class="sign-up-head text-center">{% trans "Sign In" %}</h1>
 
-            <p>{% blocktrans %}Welcome back to RetreatRight. To make use of this sites features please log in. If
+            <p class="text-center sign-up-p">{% blocktrans %}Welcome back to RetreatRight. To make use of this sites features please log in. If
                 you
                 have not created an account yet, then <a class="link" href="{{ signup_url }}">sign up</a>
                 first.{% endblocktrans %}</p>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-8 mt-3 offset-md-2">
+    <div class="row sign-in-container">
+        <div class="col-md-8 mt-3 offset-md-2 text-center">
             <form class="login" method="POST" action="{% url 'account_login' %}">
                 {% csrf_token %}
                 {{ form.as_p }}
                 {% if redirect_field_value %}
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                 {% endif %}
-                <button class="btn btn-signup right" type="submit">{% trans "Sign In" %}</button>
+                <button class="btn btn-signup right sign-hero-button" type="submit">{% trans "Sign In" %}</button>
             </form>
         </div>
     </div>

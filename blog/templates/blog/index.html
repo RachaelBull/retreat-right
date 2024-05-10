@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% load static %}
 {% block content %}
 
 <!-- Hero Image -->
@@ -42,12 +42,9 @@
                     <div class="card mb-4">
                         <div class="card-body">
                             <div class="image-container">
-                                <div class="image-flash">
-                                    <p class="author">Author: {{ post.author }}</p>
-                                </div>
                             </div>
                             <a href="{% url 'post_detail' post.slug %}" class="post-link">
-                                <h2 class="card-title">{{ post.title }}</h2>
+                                <h2 class="home-post-header">{{ post.title }}</h2>
                                 <p class="card-text">{{ post.excerpt }}</p>
                             </a>
 
@@ -57,9 +54,9 @@
                         </div>
                         <div class="col-auto d-none d-lg-block">
                             {% if "placeholder" in post.content_image.url %}
-                            <img style="object-fit: cover;" width="200" height="250" src="{% static 'images/turtle.jpg' %}" alt="placeholder image">
+                            <img class="content-img" style="object-fit: cover;" width="200" height="250" src="{% static 'images/turtle.jpg' %}" alt="placeholder image">
                             {% else %}
-                            <img style="object-fit: cover;" width="200" height="250" src=" {{ post.content_image.url }}" alt="{{ post.title }}">
+                            <img class="content-img" style="object-fit: cover;" width="200" height="250" src=" {{ post.content_image.url }}" alt="{{ post.title }}">
                             {% endif %}
                         </div>
                     </div>

@@ -7,7 +7,7 @@ body {
 }
 
 .header-strip {
-    background-color: rgb(115, 115, 115);
+    background-color: transparent;
 }
 
 .logo-container {
@@ -148,6 +148,18 @@ body {
     border-radius: 10px 40px;
 }
 
+.home-post-header {
+    font-family: Lobster Two, sans-serif;
+    letter-spacing: 2px;
+}
+
+.content-img {
+    display: block;
+    margin-left: auto;
+    border-top-left-radius: 40%;
+    border: solid 1px black;
+}
+
 #username {
     font-weight: bold;
     font-size: large;
@@ -195,12 +207,6 @@ body {
 .scale {
     width: 100%;
     height: auto;
-}
-
-.author {
-    color: #519864;
-    margin: 4px;
-    font-family: DM Sans, sans-serif;
 }
 
 .masthead {

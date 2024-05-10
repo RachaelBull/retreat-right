@@ -385,3 +385,51 @@ div, ul {
     letter-spacing: 1px;
     font-weight: bold;
 }
+
+/** About page **/
+
+#about-header {
+    text-transform: uppercase;
+    font-family: DM Sans, sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.about-form {
+    border: 2px solid rgb(0, 255, 153, .4);
+    /*width: 40vw;*/
+    height: 700px;
+    padding-bottom: 20px;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    background-color: rgb(255, 255, 255, .6);
+    font-family: DM Sans, sans-serif;
+    width: 80%;
+    margin-left : 15%
+}
+
+.about-img {
+    padding-top: 20px;
+}
+
+.about-title {
+    font-family: Lobster Two, sans-serif;
+}
+
+.about-content {
+    font-family: DM Sans, sans-serif;
+}
+
+/* Footer */
+
+.bottom-spacing {
+    padding-bottom: 20px;
+}
+
+/* General */
+
+.center-align {
+    display: block;
+    margin: auto;
+}

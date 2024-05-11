@@ -15,16 +15,6 @@
         <p class="pill"><i class="far fa-heart"></i> Like posts</p>
         <p class="pill"><i class="far fa-comment"></i> Comment on posts</p>
         <p class="pill"><i class="far fa-user"></i> View your profile</p>
-        <div id="sign-hero-button-container">
-            <a href="{% url 'account_login' %}"><button type="button" class="sign-hero-button">
-                Sign In
-            </button></a>
-        </div>
-        <div id="register-hero-button-container">
-            <a href="{% url 'account_signup' %}"><button type="button" class="sign-hero-button">
-                Sign Up
-            </button></a>
-        </div>
     </div>
     </section>
   </div>
@@ -47,7 +37,7 @@
                                 <p class="card-text post-text">{{ post.excerpt }}</p>
                             </a>
 
-                            <p class="card-text text-muted h6 card-text-p" id="created-on-text">{{ post.created_on}}
+                            <p class="card-text text-muted h6 card-text-p created-on-text">{{ post.created_on}}
                             </p>
                         </div>
                         <div class="col-auto d-none d-lg-block card-text">

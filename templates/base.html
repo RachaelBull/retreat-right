@@ -72,11 +72,11 @@
                     {% endif %}
 
                 </ul>
-                <span class="navbar-text text-muted">
+                <span class="navbar-text text-muted text-end m-3">
                     {% if user.is_authenticated %}
-                    <p class="text-end m-3">Signed in as <span id="username">{{ user.username }}</span></p>
+                    Signed in as <span id="username">{{ user.username }}</span>
                     {% else %}
-                    <p class="text-end m-3">Please login to access this sites full features.</p>
+                    Please login to access this sites full features.
                     {% endif %}
                 </span>
             </div>

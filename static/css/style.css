@@ -1,7 +1,3 @@
-body {
-    background-color:  rgb(115, 115, 115);
-}
-
 #greyed {
     background-color: rgb(115, 115, 115);
 }
@@ -489,7 +485,7 @@ body {
 }
 
 @media only screen and (max-width: 1570px) {
-    #created-on-text {
+    .created-on-text {
         display: none;
     }
 }

@@ -17,7 +17,7 @@ body {
 .logo-first {
     font-family: DM Sans, sans-serif;
     font-size: 2rem;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: 700;
     color: #4A4A4F;
     padding-left: 10px;
@@ -408,6 +408,13 @@ body {
     font-family: DM Sans, sans-serif;
 }
 
+.post-borders {
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    font-family: DM Sans, sans-serif;
+}
+
 /* Footer */
 
 .bottom-spacing {
@@ -473,16 +480,17 @@ body {
     .post-text {
         width: 100%;
     }
-
-    #burger-icon {
-        position: absolute;
-        right: 0;
-    }
 }
 
 @media only screen and (max-width: 1440px) {
     #post-image {
         height: 100%;
+    }
+}
+
+@media only screen and (max-width: 1570px) {
+    #created-on-text {
+        display: none;
     }
 }
 
@@ -492,6 +500,16 @@ body {
     }
     
     #register-hero-button-container {
+        display: none;
+    }
+}
+
+@media only screen and (max-height: 654px) {
+    .sign-cover {
+        display: none;
+    }
+
+    #welcome-header {
         display: none;
     }
 }

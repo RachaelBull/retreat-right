@@ -40,25 +40,7 @@
 </div>
 
 <!-- Displaying count of likes -->
-<div class="row">
-  <div class="col-1">
-    <strong>
-      {% if user.is_authenticated %}
-      <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
-          {% csrf_token %}
-          {% if user in post.likes.all %}
-            <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="fas fa-heart"></i></button>
-          {% else %}
-            <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="far fa-heart"></i></button>
-          {% endif %}
-      </form>
-      {% else %}
-      <span class="text-secondary"><i class="far fa-heart"></i></span>
-      {% endif %}
-    <!-- The number of likes goes before the closing strong tag -->
-      <span class="text-secondary">{{ post.likes_count }} </span>
-    </strong>
-  </div>
+
 
 <!-- Displaying count of comments -->
 <div class="row">
@@ -66,14 +48,28 @@
       <strong class="text-secondary">
         <i class="far fa-comments"></i> {{ comment_count }}
       </strong>
-    </div>
-    <div class="col-12">
+      <strong>
+        {% if user.is_authenticated %}
+        <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
+        {% csrf_token %}
+        {% if user in post.likes.all %}
+        <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="fas fa-heart"></i></button>
+        {% else %}
+        <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="far fa-heart"></i></button>
+        {% endif %}
+        </form>
+        {% else %}
+        <span class="text-secondary"><i class="far fa-heart"></i></span>
+        {% endif %}
+        <!-- The number of likes goes before the closing strong tag -->
+        <span class="text-secondary">{{ post.likes_count }} </span>
+        </strong>
+      </div>
       <hr>
     </div>
-  </div>
   <!-- Displaying Comments -->
   <div class="row">
-    <div class="col-md-8 card mb-4  mt-3 ">
+    <div class="col-md-8 card mb-4  mt-3 post-borders">
       <h3>Comments:</h3>
       <div class="card-body">
         <!-- We want a for loop inside the empty control tags
@@ -107,20 +103,20 @@
     </div>
   </div>
   <!-- Creating New Comments -->
-  <div class="col-md-4 card mb-4 mt-3">
+  <div class="col-md-4 card mb-4 mt-3 post-borders">
     <div class="card-body">
       {% if user.is_authenticated %}
-      <h3>Leave a comment:</h3>
-      <p>Posting as: {{ user.username }}</p>
+      <h3>Get involved, leave a comment:</h3>
+      <p>{{ user.username }}, what would you like to say?</p>
       <form id="commentForm" method="post"
         style="margin-top: 1.3em;">
         {{ comment_form | crispy }}
         {% csrf_token %}
         <button id="submitButton" type="submit"
-          class="btn btn-signup btn-lg">Submit</button>
+          class="btn btn-signup btn-lg sign-hero-button">Submit</button>
       </form>
       {% else %}
-      <p>Log in to leave a comment</p>
+      <p>Please sign in to your account to leave a comment</p>
       {% endif %}
     </div>
   </div>

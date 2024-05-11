@@ -1,6 +1,7 @@
 from .models import UsersPage
 from django import forms
 
+
 class UsersPageForm(forms.ModelForm):
     class Meta:
         model = UsersPage

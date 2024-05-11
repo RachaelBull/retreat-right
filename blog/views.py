@@ -13,6 +13,7 @@ class PostEntries(generic.ListView):
     template_name = "blog/index.html"
     paginate_by = 3
 
+
 def post_detail(request, slug):
     """
     Display an individual :model:`blog.Post`.
@@ -39,21 +40,17 @@ def post_detail(request, slug):
             comment.save()
             messages.add_message(
                 request, messages.SUCCESS,
-                'Comment submitted and awaiting approval'
-    )
+                'Comment submitted and awaiting approval')
 
     comment_form = CommentForm()
 
-    return render(
-    request,
-    "blog/post_detail.html",
-    {
+    return render(request, "blog/post_detail.html", {
         "post": post,
         "comments": comments,
         "comment_count": comment_count,
         "comment_form": comment_form,
-    },
-)
+    },)
+
 
 def comment_edit(request, slug, comment_id):
     """
@@ -73,9 +70,10 @@ def comment_edit(request, slug, comment_id):
             comment.save()
             messages.add_message(request, messages.SUCCESS, 'Comment Updated!')
         else:
-            messages.add_message(request, messages.ERROR, 'Error updating comment!')
+            messages.add_message(request, messages.ERROR, 'Please try again!')
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
 
 def comment_delete(request, slug, comment_id):
     """
@@ -89,9 +87,10 @@ def comment_delete(request, slug, comment_id):
         comment.delete()
         messages.add_message(request, messages.SUCCESS, 'Comment deleted!')
     else:
-        messages.add_message(request, messages.ERROR, 'You can only delete your own comments!')
+        messages.add_message(request, messages.ERROR, "Oops, that isn't yours")
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
 
 class PostLike(View):
     """

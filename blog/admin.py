@@ -1,6 +1,7 @@
 from django.contrib import admin
-from .models import Post, Comment # R imports the post model created
+from .models import Post, Comment
 from django_summernote.admin import SummernoteModelAdmin
+
 
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
@@ -11,5 +12,6 @@ class PostAdmin(SummernoteModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
     summernote_fields = ('content', 'ticket_price')
 
-# Register your models here.
+
+# Registered models
 admin.site.register(Comment)

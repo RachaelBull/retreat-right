@@ -11,7 +11,7 @@ def about_me(request):
         contact_form = ContactForm(data=request.POST)
         if contact_form.is_valid():
             contact_form.save()
-            messages.add_message(request, messages.SUCCESS, "Contact request received! Please allow a few days for me to get back to you.")
+            messages.add_message(request, messages.SUCCESS, "Request recieved")
     """
     Renders the About page
     """
@@ -21,7 +21,5 @@ def about_me(request):
     return render(
         request,
         "about/about.html",
-        {
-        "about": about,
-        "contact_form": contact_form},
+        {"about": about, "contact_form": contact_form},
     )

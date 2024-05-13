@@ -10,7 +10,7 @@ This site is based around user authentication and user interactivity to create a
 
 [Visit this projects repository here](https://github.com/RachaelBull/retreat-right)
 
-RESPONSIVE PIC TO GO HERE
+![Retreat Right Am I Responsive](documentation/diagrams/responsive.png)
 
 LIST OF CONTENTS TO GO HERE
 
@@ -82,11 +82,41 @@ This website will consist of the following features:
 
 ## Wireframes and Design
 
-WIREFRAMES WILL GO HERE
+This website project was carefully planned in terms of design and features for mobile view and desktop view using the wire frames below:
+
+*The Home page on desktop*
+
+![Home wireframes - desktop](documentation/diagrams/wire-home-desktop.png)
+
+*The About page on desktop*
+
+![About wireframes - desktop](documentation/diagrams/wire-about-desktop.png)
+
+*The Profile page on desktop*
+
+![Profile wireframes - desktop](documentation/diagrams/wire-profile-desktop.png)
+
+*The Post page on desktop*
+
+![Page wireframes - desktop](documentation/diagrams/wire-page-desktop.png)
+
+*The wireframes in Mobile view*
+
+![Mobile wireframes - desktop](documentation/diagrams/wire-mobile.png)
+
+## Flowchart
+
+The logic of this website was planned out using a flowchart using LucidChart. This was made to act as a set of instructions and a reminder of what features require certain authentication. This was to ensure that my website was still accessable and interactive for people without registering for an account, but made more accessable and offered more features to people that did have an account with Retreat Right.
+
+![Flowchart](documentation/diagrams/flowchart.png)
 
 ## Data Model Plans
 
-DATA MODEL PLANS WILL GO HERE
+The models used across this website were also carefully planned out before starting the project to be able to code and develop with more ease when it came to implimenting the models into my project. This is because the diagrams below act as a visual set of instructions on how to go about structuring the models:
+
+![Model Planning Diagram](documentation/diagrams/models-diagram.png)
+
+Here, you can see which models are planned to be linked to others, and which fields are to be implimented for the best results. You can also see which fields within the models plan to use fields with a Foreign Key.
 
 # Data Models
 
@@ -123,3 +153,11 @@ Here I will explain in more depth what each model will do and is expected to do.
 - The profile has a one to one relationship with the use model as the user can only have one profile and that specific profile can only belong to one user
 - The profile model consists of a name field, an email field, and a bio field which the user is able to create and update freely
 - The contents updated by the user will stay filled in in the form in order for the user to come back to and read/update
+
+## Colour Scheme
+
+The colours used in this project are: rgb(115, 115, 115) (Light Grey), Whitesmoke, #4A4A4F (Darker Grey), rgb(0, 255, 153) (Light Green), White, rgb(217, 217, 217) (Slightly Darker White), #445261 (Medium Grey).
+
+I chose these colours as to create an atmosphere for the user straight into opening the landing page. With this website project being based around travelling and the idea of getting away and retreating away from reality, I thought it would be more suitable for the colours to reflect what I expect users would think about when going away somewhere to retreat. For example, somewhere bright and sandy (white), somewhere with beautiful beaches and clear blue water (blue) and exotic trees only the hot climates could grow (green). 
+
+The greys and off white colours were added in to create a more professional looking welsite to break up the bright colours inbetween the use of them on different pages.

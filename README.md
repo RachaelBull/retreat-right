@@ -217,3 +217,118 @@ Directly underneith posts the user is presented with a footer that matches the s
 ![Home Page Bottom](documentation/features/home-bottom.png)
 
 # About
+
+*Page Heading*
+
+The top of the page has a big, bold uppercase heading to make it clear to users what this page will be about.
+
+![About Heading](documentation/features/about-heading.png)
+
+*About Content*
+
+Directly underneath the page heading you will find a fairly large amount of text displayed for users to read. The nature of this text is to further inform the user on what this page and website was made for and who it was made by, giving extra information about the website owner.
+
+![About Text](documentation/features/about-text.png)
+
+*Contact Form*
+
+Located underneith the about page heading and text the user will be displayed a contact form that they can fill out in order to get in touch with the website owner for any questions or messages that they would like to share and pass on. The user is prompted to fill out their name, email and message request before submitting. Upon submitting the user will presented with a message at the top of the screen that acts as confirmation of the message sent.
+
+![Contact Form](documentation/features/contact-form.png)
+![Messages Contact](documentation/testing/messages-contact.png)
+
+# Profile
+
+*Page Heading*
+
+The top of this page is again presented with the consistant but basic styling of bold, uppercase and big text.
+
+![Profile Heading](documentation/features/profile-heading.png)
+
+*Profile Form*
+
+Directly undereath the profile page heading the user will find a profile form that the user can fill out to tell the owner of the website a little more about themselves. This will then be shown in the admin panel upon successful submission. The users inputted fields are saved and stored within the form whenever the user updates their profile using the submit button. Everytime the user successfully updates and creates their profile a confirmation message is displayed at the top of the page.
+
+![Profile Form](documentation/features/profile-form.png)
+![Profile Message](documentation/testing/messages-profile.png)
+
+# Log Out
+
+*Log Out Heading*
+
+The top of this page is again presented with the consistant but basic styling of bold, uppercase and big text.
+
+![Sign Out Heading](documentation/features/logout-heading.png)
+
+*Log Out Form*
+
+Underneath the page header there is a form containing a button which the user would use if they wanted to continue with logging out of their account. The colours are continuous with the rest of the websites styling giving it a more professional and less confusing look. After the user has successfully logged out of their account a confirmation message will appear at the top of the screen.
+
+![Log Out Form](documentation/features/logout-form.png)
+![Log Out Message](documentation/testing/messages-logout.png)
+
+# Sign Up
+
+*Sign Up Heading*
+
+![Sign Up Heading](documentation/features/signup-heading.png)
+
+*Sign Up Form*
+
+Just above the Sign Up form there is some text containing a link back to the sign in page incase users that already have accounts have navigate themselves to this part of the website by accident.
+
+![Sign In Link](documentation/features/signin-link.png)
+
+Underneath the sign up page heading there is a form that promps the user to fill out the fields in order to create an account with the website. This includes a Username field which requires input, an Email field which doesn't require input, a password field which does require input following the instructions below it, and another password field which confirms the above password was correct.
+
+![Sign Up Form](documentation/features/signup-form.png)
+
+# Log In
+
+*Log In Heading*
+
+![Log In Heading](documentation/features/login-heading.png)
+
+*Log In Text*
+
+Underneath the Log In heading there is a short ammount of text that contains a link to redirect any users to the sign up page if they have not yet made an account with the website.
+
+![Log In Text](documentation/features/login-text.png)
+
+*Log In Form*
+
+The log in page also features a log in form for the user to fill out in order to get access to more features of the website. The user is prompted to fill out their username correctly and their password. If either of these fields so not exactly match a users details then access with be denied. Once the user has successfully logged in a message will appear at the top of the screen to act as confirmation.
+
+![Log In Form](documentation/features/login-form.png)
+![Log In Message](documentation/testing/messages-login.png)
+
+# Blog Posts
+
+The Blog Posts page consists of:
+
+- A Post Heading containing a fun title explaining the nature of the post
+- Small text underneath the heading advising the users of the current going prices on one way tickets across airlines
+- A detailed image located to the right of the page header that acts as a way to pull the user audience in and entise them to wanting to visit there
+
+![Blog Banner](documentation/features/blog-banner.png)
+
+- A full view of the post content with text dividers and use of boldness to give the page a more attractive look
+
+![Blog Post](documentation/features/blog-post.png)
+
+- A comments and likes count located directly underneath the blog post which a logged in user can click. Upon clicking the heart icon the icon will turn red for that user and the number next to it with increment by 1, indicating that the current user has liked that post. I the user then clicks on that icon again then the icon will go back to its original state and the number next to it with decrease by 1.
+
+![Blog Count](documentation/features/blog-count.png)
+
+- A comments section displaying comments and any unapproved comments made by the current logged in user
+- A comments form for the current logged in user to fill in if they would like to leave a comment on that post. This consists of a body field which requires input in order to successfully submit.
+
+![Blog Comments](documentation/features/blog-comments.png)
+
+- When the user leaves a comment a message will appear at the top of the screen
+- When a user edits their comment a message will appear at the top of the screen
+- When a user deleted their comment a message will appear at the top of the screen
+
+![Create Comment Message](documentation/testing/messages-comment-submit.png)
+![Edit Comment Message](documentation/testing/messages-comment-update.png)
+![Delete Comment Message](documentation/testing/messages-comment-delete.png)

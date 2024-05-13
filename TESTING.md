@@ -100,3 +100,43 @@
 
 ![Sign Up Form - Password (again)](documentation/testing/signup-password-again.png)
 
+### Profile Form
+
+| Tests ran as a user and superuser | Actions | Outcome |
+|:---|---:|:---:|
+| Profile Form - Name | The user is required to fill in this field before submission | Successful - Works as expected |
+| Profile Form - Email | The user is required to fill out this field before submission |Successful - Works as expected |
+| Profile Form - About You | This user is not required to fill out this field before submission | Successful - Works as expected |
+| Profile Form - Button | The user information is saved and stored into the form upon submission | Successful - Works as expected |
+| Profile Form - Admin | The user profile is able to be viewed and edited from the admin panel | Successful - Works as expected |
+
+**Profile Form - Name**
+
+![Profile Form - Name](documentation/testing/profile-name.png)
+
+**Profile Form - Email**
+
+![Profile Form - Email](documentation/testing/profile-email.png)
+
+**Profile Form - Admin**
+
+![Profile Form - Admin](documentation/testing/profile-admin.png)
+
+### Comment Form
+
+| Tests ran as a user and superuser | Actions | Outcome |
+|:---|---:|:---:|
+| Comment Form - Body | The user is required to fill out this field before submission (cannot be blank) | Successful - Works as expected |
+| Comment Form - Submitted Comment | The users comment can be editted or deleted upon submission, both before and after being approved | Successful - Works as expected |
+
+**Comment Form - Body**
+
+![Comment Form - Body](documentation/testing/comments-body.png)
+
+**Comment Form - Update**
+
+![Comment Form - Update](documentation/testing/comments-update.png)
+
+**Comment Form - Delete**
+
+![Comment Form - Delete](documentation/testing/comments-delete.png)

@@ -20,6 +20,28 @@
 
 ## Form testing
 
-| Tests ran as a user | Actions | Outcome |
+# Contact Form
+
+| Tests ran as a user and superuser | Actions | Outcome |
 |:---|---:|:---:|
-| 
+| Contact Form - Name Field | The user is required to fill out this field before submitting | Successful - Works as expected |
+| Contact Form - Email Field | The user is required to fill out this field correctly before submitting | Successful - Works as expected |
+| Contact Form - Message Field | The user is required to have content in this field before submitting (cannot be left blank) | Successful - Works as expected |
+| Contact Form - Submit Button | The form clears after the submit button is clicked | Successful - Works as expected |
+| Contact Form - Admin Panel | The contact request is recieved in the admin panel | Successful - Works as expected |
+
+**Contact Form - Name Field**
+
+![Contact Form - Name](documentation/testing/contact-name.png)
+
+**Contact Form - Email Field**
+
+![Contact Form - Email](documentation/testing/contact-email.png)
+
+**Contact Form - Message Field**
+
+![Contact Form - Message](documentation/testing/contact-message.png)
+
+**Contact Form - Admin Panel**
+
+![Contact Form - Admin](documentation/testing/contact-admin.png)

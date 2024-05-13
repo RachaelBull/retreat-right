@@ -161,3 +161,59 @@ The colours used in this project are: rgb(115, 115, 115) (Light Grey), Whitesmok
 I chose these colours as to create an atmosphere for the user straight into opening the landing page. With this website project being based around travelling and the idea of getting away and retreating away from reality, I thought it would be more suitable for the colours to reflect what I expect users would think about when going away somewhere to retreat. For example, somewhere bright and sandy (white), somewhere with beautiful beaches and clear blue water (blue) and exotic trees only the hot climates could grow (green). 
 
 The greys and off white colours were added in to create a more professional looking welsite to break up the bright colours inbetween the use of them on different pages.
+
+## Font Used
+
+The fonts that were chose for this project are:
+  * Roboto
+  * Lato
+  * DM Sans
+  * Lobster Two Sans
+These fonts were all backed up using 'sans-serif' incase of any loading errors. These fonts were all used by imports from [Google Fonts](https://fonts.google.com/).
+
+### List of Features
+
+- A Home page displaying blog post snippets
+- An About page displaying further owner informations
+- A Contact form located within the About page
+- A Log In form
+- A Log Out form
+- A Sign Up form
+- A Profile page
+- A Profile form
+- A Blog post page
+
+## Features in more detail
+
+# Home
+
+*Logo*
+
+Located at the top left of the nav bar you will find an attractive logo split into two different styles and colours to again, recreate those colours in the user's head as to what they would expect to see if they were away abroad somewhere. The text used was big but not too big with a small letter spacing style used, this is to make it clear that it is the name of the website but not too big that takes up a significant part of the page.
+
+*Nav Bar - Links*
+
+Just to the right of the logo text in desktop/large tablet view you will see the navigation links to the different apps and pages across this website. The text was set to uppercase here to draw the user into looking at the navbar, I thought that this also created a nice looking design for the rest of the nav bar as the colour of the nav bar was set to light, making it look a little plain when lowercase text was being used. When in mobile view the navbar links become stored in a little three lined dropdown icon, making it easier and more visually appealing for the user to comfortably get around the website.
+
+*Hero Image*
+
+When arriving to the landing page, the user is greeted with a big beautiful image of the carribean. This is what I image a person would picture straight away when thinking about a place to get away and retreat to, somewhere warm, hot and surrounded with breathtaking views. This instantly attracts the user to stay on the page as the hero image sends a clear message that this website is about travelling.
+
+*Hero Cover Text*
+
+Underneath the nav bar to the far right you will find some text that changes upon the users current situation. If the user is not logged in then the text will show as this: 'Please log in to access this sites full features.'
+And if the user is logged in then the text will show as this: 'Signed in as <username>'
+This gives the user the feel of a more personal approach as they are being adressed and acknowledged after their sign in, and if the user isn't signed in it acts as a little reminder. For new users this gives them that extra little encouragment to create and account with the website to access the features provided to logged in users.
+
+*Post Snippet Cards*
+
+A breif snippet of the posts displaying an uploaded picture can be located directly underneath the hero image. These are split into 3 per page and change upon the width and height of the users device view. Here the 3 cards will display a post title, a post exerpt, a post picture and a created on date. This acts as a little teaser to the user to entise them to click onto the post and read more. The images represent each post in a bold way to again show the user what the rest of that post will be about. Underneath these post cards there is a button which controls which teaser posts are being displayed on that same page, a great feature to keep the content flowing but keeping the user onto their current page.
+
+*Footer*
+
+Directly underneith posts the user is presented with a footer that matches the styles of the header, this is more visually pleasing for the user as it is demonstrating consistancy throughout the design and helping not to overcrowd the page too much with different designs. The footer contains a small bit of text stating the creator and purpose of the website. There are also two social media links in the footer to help the user get to know the creator. This also acts as good advertisment and gives the website that extra bit of a legitimate and professional feel.
+
+![Home Page Top](documentation/features/home-top.png)
+![Home Page Bottom](documentation/features/home-bottom.png)
+
+# About

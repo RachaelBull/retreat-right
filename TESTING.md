@@ -19,8 +19,6 @@
 | Sign In Link - Sign Up Page | Takes to the user to the Sign In page | Successful - Works as expected |
 | Next Button (under post snippets) | Displays the next three post snippets to the user | Successful - Works as expected |
 
-## Form testing
-
 ### Contact Form
 
 | Tests ran as a user and superuser | Actions | Outcome |
@@ -128,6 +126,7 @@
 |:---|---:|:---:|
 | Comment Form - Body | The user is required to fill out this field before submission (cannot be blank) | Successful - Works as expected |
 | Comment Form - Submitted Comment | The users comment can be editted or deleted upon submission, both before and after being approved | Successful - Works as expected |
+| Comment Form - Admin | Comments are able to be editied, delelted and approved from the admin panel | Successful - Works as expected |
 
 **Comment Form - Body**
 
@@ -140,3 +139,55 @@
 **Comment Form - Delete**
 
 ![Comment Form - Delete](documentation/testing/comments-delete.png)
+
+**Comment Form - Admin**
+
+![Comment Form - Admin](documentation/testing/comments-admin.png)
+
+### Like
+
+| Tests ran as a user | Actions | Outcome |
+|:---|---:|:---:|
+| Likes - Posts | The likes heart icon turns red and the number of likes incremented upon clicking | Successful - Works as expected |
+| Likes - Posts Admin | The likes are displayed in the admin panel upon clicking | Successful - Works as expected |
+
+### Notifications and messages 
+
+| Tests ran as a user | Actions | Outcome |
+|:---|---:|:---:|
+| Messages - Contact | A confirmation message is displayed to the user upon contact form submission | Successful - Works as expected |
+| Messages - Profile | A confirmation message is displayed to the user upon profile form submission | Successful - Works as expected |
+| Messages - Log In | A confirmation message is displayed to the user upon signing in | Successful - Works as expected |
+| Messages - Sign Up | A confimation of log in message is displayed to the user upon signing up | Successful - Works as expected |
+| Messages - Log Out | A Sign Out message is displayed to user upon signing out | Successful - Works as expected |
+| Messages - Comment Submit | A confirmation message is displayed to the user upon submitting a comment | Successful - Works as expected |
+| Messages - Comment Update | A confirmation message is displayed to the user upon updating a comment | Successful - Works as expected |
+| Messages - Comment Delete | A confirmation message is displayed to the user upon deleting a comment | Successful - Works as expected |
+
+**Messages - Contact** 
+
+![Messages - Contact](documentation/testing/messages-contact.png)
+
+**Messages - Profile**
+
+![Messages - Profile](documentation/testing/messages-profile.png)
+
+**Messages - Log In**
+
+![Messages - Log In](documentation/testing/messages-login.png)
+
+**Messages - Log Out**
+
+![Messages - Log Out](documentation/testing/messages-logout.png)
+
+**Messages - Comment Submit**
+
+![Messages - Comment Submit](documentation/testing/messages-comment-submit.png)
+
+**Messages - Comment Update**
+
+![Messages - Comment Update](documentation/testing/messages-comment-update.png)
+
+**Messages - Comment Delete**
+
+![Messages - Comment Delete](documentation/testing/messages-comment-delete.png)

@@ -1,3 +1,5 @@
+/* Home Page */
+
 #greyed {
     background-color: rgb(115, 115, 115);
 }
@@ -98,14 +100,6 @@
     padding-left: 5px;
 }
 
-#sign-hero-button-container {
-    padding-right: 50px;
-    margin-right: 50px;
-    position: absolute;
-    right: 10px;
-    top: 50px;
-}
-
 .sign-hero-button {
     width: 120px;
     height: 60px;
@@ -116,14 +110,6 @@
     font-weight: bold;
     color: white;
     background-color: rgb(166, 166, 166, .4);
-}
-
-#register-hero-button-container {
-    padding-right: 50px;
-    margin-right: 50px;
-    position: absolute;
-    right: 10px;
-    top: 140px;
 }
 
 .para-header-second {
@@ -197,6 +183,8 @@
     position: relative;
     margin-top: 3px;
 }
+
+/* Post Detail */
 
 .image-flash {
     position: absolute;
@@ -316,11 +304,18 @@
     color: rgb(222, 146, 168);
 }
 
+/* Footer */
+
 .social-tag {
     color: rgb(0, 255, 153, .7);
     font-size: 200%;
     padding: 20px;
 }
+
+.bottom-spacing {
+    padding-bottom: 20px;
+}
+
 
 /** Sign Up Page **/
 
@@ -411,12 +406,6 @@
     font-family: DM Sans, sans-serif;
 }
 
-/* Footer */
-
-.bottom-spacing {
-    padding-bottom: 20px;
-}
-
 /* General */
 
 .center-align {
@@ -442,7 +431,10 @@
 .profile-bigger {
     padding-bottom: 30px;
 }
-/* Mobile View */
+
+
+/* Media Querys */
+
 @media only screen and (max-width: 768px) {
     
     #welcome-header {

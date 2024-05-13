@@ -14,9 +14,6 @@
 
 <div class="container mt-5 bottom-spacing">
     <div class="row">
-        <div class="col-md-4 col-sm-12 text-center" width="35%" height="25%" id="about-img-container">
-            <img src="{% static 'images/about.png' %}" width="100%" height="95%" class="about-img">
-        </div>
         <div class="col-md-8 col-sm-12 about-content">
             <h3 class="about-title">{{ about.title }}</h3>
             {{ about.content | safe }}

@@ -191,3 +191,57 @@
 **Messages - Comment Delete**
 
 ![Messages - Comment Delete](documentation/testing/messages-comment-delete.png)
+
+## Validators
+
+### HTML Validator
+
+**HTML Validator Results:**
+
+I validated my HTML code using the websites URI link to eliminate any errors I would have got for the Django Templating Language.
+
+The validator used was the [W3C Markup Validation Service](https://validator.w3.org/)
+
+![HTML Validator](documentation/testing/html-val.png)
+
+**CSS Validator Results:**
+
+**Home Page**
+
+![Home Page Validator](documentation/testing/html-val-home.png)
+
+**About Page**
+
+![About Page Validator](documentation/testing/html-val-about.png)
+
+**Sign Up Page**
+
+I do come across a few errors when validating this page however it is an external package installed used to handle all user authentication.
+
+**Profile Page**
+
+![Profile Validator](documentation/testing/html-val-profile.png)
+
+**Log In Page**
+
+![Log In Validator](documentation/testing/html-val-signin.png)
+
+**Sign Out Page**
+
+![Sign Out Validator](documentation/testing/html-val-signout.png)
+
+## CSS Validator results:
+
+![CSS Results](documentation/testing/css-val.png)
+
+## JavaScript Validator results:
+
+![JS Results](documentation/testing/js-val.png)
+
+*There is a message regarding an undefined variable however my code is actually using 'Bootstrap' throughout the operation.*
+
+## Python Validator Results:
+
+All Python code ran through the validator with no errors.
+
+![Python Validation](documentation/testing/python-val.png)

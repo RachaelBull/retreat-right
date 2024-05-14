@@ -202,10 +202,6 @@ I validated my HTML code using the websites URI link to eliminate any errors I w
 
 The validator used was the [W3C Markup Validation Service](https://validator.w3.org/)
 
-![HTML Validator](documentation/testing/html-val.png)
-
-**CSS Validator Results:**
-
 **Home Page**
 
 ![Home Page Validator](documentation/testing/html-val-home.png)
@@ -228,7 +224,7 @@ I do come across a few errors when validating this page however it is an externa
 
 **Sign Out Page**
 
-![Sign Out Validator](documentation/testing/html-val-signout.png)
+![Sign Out Validator](documentation/testing/html-val-logout.png)
 
 ## CSS Validator results:
 
